@@ -96,10 +96,6 @@ double promptDouble(std::string message, double min, double max)
     int gradeSize =0;
     double grade;
     std::string inGrade;
-    /*
-    std::cout << message;
-    std::cin >> inGrade;
-    */
     while(isDub != 1){
         isDub = 0;
         decimalPointCounter = 0;
@@ -136,13 +132,6 @@ double promptDouble(std::string message, double min, double max)
             }
         }
     }
-    /*
-    while(grade > max || grade < min){
-        std::cout << "Sorry, I cannot understand your answer" << std::endl;
-        std::cout << message;
-        std::cin >> grade;
-    }
-    */
     return grade;
 }
 
@@ -157,7 +146,7 @@ void calculateStudentAverage(void *object, double *avg)
     int j = 0;
 
     for (j = 0; j< assignment_num; j++){
-        total = total + ((double*)object)[j]; //casts to a double pointer
+        total = total + ((double*)object)[j];
     }
     //dividing by number of assignemnts
     total = total/(int)(j);
