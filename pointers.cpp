@@ -43,7 +43,7 @@ int main(int argc, char **argv)
     std::cout << "\nStudent: " << student.f_name << " " << student.l_name << " [" << student.id << "]" << std::endl;
     // Call `CalculateStudentAverage(???, ???)`
     calculateStudentAverage(student.grades, &average);
-   
+
     // Output `average`
     std::cout << "  Average grade: " << average << std::endl;
 
@@ -58,8 +58,7 @@ int main(int argc, char **argv)
 int promptInt(std::string message, int min, int max)
 {
     // Code to prompt user for an int
-    std::string input;
-    
+    std::string input;  
     bool isInt = false;
     int in;
     while(!isInt){
